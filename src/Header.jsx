@@ -10,7 +10,7 @@ function Header() {
         <nav>
             <ol className='flex gap-2.5'>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
+                <li><Link to="/about">About us</Link></li>
             </ol>
         </nav>
         <button className='bg-gray-300 rounded-2xl w-[120px] cursor-pointer'>Darkmode</button>
