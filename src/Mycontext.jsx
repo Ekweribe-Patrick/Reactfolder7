@@ -3,9 +3,14 @@ export let ContextBox = createContext()
 
 function Mycontext({children}) {
 
-    let [theme, setTheme] = useState(false)
+    let [theme, setTheme] = useState(true)
+
+    let toggleTheme=()=>{
+      setTheme(!theme)
+    }
+
   return (
-    <ContextBox.Provider value={theme}>
+    <ContextBox.Provider value={{theme, toggleTheme}}>
         {children}
     </ContextBox.Provider>    
   )
